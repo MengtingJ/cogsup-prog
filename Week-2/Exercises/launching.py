@@ -5,12 +5,12 @@ import random
 control.set_develop_mode()
 
 # Create an object of class Experiment: This stores the global settings of your experiment & handles the data file, screen, and input devices
-exp = design.Experiment(name = "Two Square")
+exp = design.Experiment(name = "Launching")
 
 # Initialize the experiment: Must be done before presenting any stimulus
 control.initialize(exp)
 
-# Create a fixation cross (color, size, and position will take on default values)
+# set square prameters
 square_size = 50
 red_start_x = -400
 green_start_x = 0
@@ -28,7 +28,7 @@ square_green.present(clear=False, update=True)
 
 total_distance = abs(green_start_x-red_start_x-square_size)  # the distance square should move
 steps = 50                      # number of step
-dx = total_distance / steps     # number of pixel for each step
+dx = int(total_distance / steps)     # number of pixel for each step
 delay = 10                      # delay between each step
 
 # red square moves

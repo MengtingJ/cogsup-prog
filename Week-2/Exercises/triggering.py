@@ -5,7 +5,7 @@ import random
 control.set_develop_mode()
 
 # Create an object of class Experiment: This stores the global settings of your experiment & handles the data file, screen, and input devices
-exp = design.Experiment(name = "Disrupt Time")
+exp = design.Experiment(name = "Triggering")
 
 # Initialize the experiment: Must be done before presenting any stimulus
 control.initialize(exp)
@@ -25,24 +25,26 @@ control.start(subject_id=random.randint(1, 999))
 square_red.present(clear=True, update=False)
 square_green.present(clear=False, update=True)
 
-temporal_delay = 100
+
 total_distance = abs(green_start_x-red_start_x-square_size)  # the distance square should move
-steps = 50                      # number of step
-dx = int(total_distance / steps)     # number of pixel for each step
+red_steps = 50                      # number of step
+red_dx = int(total_distance / red_steps)     # number of pixel for each step
 delay = 10                      # delay between each step
 
 # red square moves
-for _ in range(steps):
-    square_red.move((dx,0))        
+for _ in range(red_steps):
+    square_red.move((red_dx,0))        
     square_red.present(clear=True, update=False)  
     square_green.present(clear=False, update=True) 
     exp.clock.wait(delay)
 
-exp.clock.wait(temporal_delay)
+green_steps = int(red_steps / 3)                    # number of step
+green_dx = int(total_distance / green_steps)     # number of pixel for each step
+delay = 10                      # delay between each step
 
 # green square moves
-for _ in range(steps):
-    square_green.move((dx,0))        
+for _ in range(green_steps):
+    square_green.move((green_dx,0))        
     square_green.present(clear=True, update=False)  
     square_red.present(clear=False, update=True) 
     exp.clock.wait(delay)

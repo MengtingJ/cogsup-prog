@@ -5,7 +5,7 @@ import random
 control.set_develop_mode()
 
 # Create an object of class Experiment: This stores the global settings of your experiment & handles the data file, screen, and input devices
-exp = design.Experiment(name = "Disrupt Time")
+exp = design.Experiment(name = "Disrupt Space")
 
 # Initialize the experiment: Must be done before presenting any stimulus
 control.initialize(exp)
@@ -13,7 +13,7 @@ control.initialize(exp)
 # set square prameters
 square_size = 50
 red_start_x = -400
-green_start_x = 0
+green_start_x = 50      # the start pos of green square = disrupt space
 square_red = stimuli.Rectangle(size=(square_size, square_size), colour=(255, 0, 0), position = (red_start_x,0))
 square_green = stimuli.Rectangle(size=(square_size, square_size), colour=(0, 255, 0), position = (green_start_x,0))
 
@@ -25,8 +25,8 @@ control.start(subject_id=random.randint(1, 999))
 square_red.present(clear=True, update=False)
 square_green.present(clear=False, update=True)
 
-temporal_delay = 100
-total_distance = abs(green_start_x-red_start_x-square_size)  # the distance square should move
+
+total_distance = abs(0-red_start_x-square_size)  # the distance square should move
 steps = 50                      # number of step
 dx = int(total_distance / steps)     # number of pixel for each step
 delay = 10                      # delay between each step
@@ -37,8 +37,6 @@ for _ in range(steps):
     square_red.present(clear=True, update=False)  
     square_green.present(clear=False, update=True) 
     exp.clock.wait(delay)
-
-exp.clock.wait(temporal_delay)
 
 # green square moves
 for _ in range(steps):
