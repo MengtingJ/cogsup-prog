@@ -7,7 +7,7 @@ from expyriment.misc import geometry
 control.set_develop_mode()
 
 # Create an object of class Experiment: This stores the global settings of your experiment & handles the data file, screen, and input devices
-exp = design.Experiment(name = "Labeled Shapes")
+exp = design.Experiment(name = "Labeled Shapes Function")
 
 # Initialize the experiment: Must be done before presenting any stimulus
 control.initialize(exp)
@@ -18,31 +18,6 @@ hexagon_pos = (150, 0)
 triangle_side = 50
 triangle_height = triangle_side * math.sqrt(3) / 2
 hex_side = triangle_side / 2
-
-def regular_polygon_vertices(n_edges, side_length):
-    """
-    Generate coordinates of a regular polygon centered at (0,0).
-
-    Parameters
-    ----------
-    n_edges : int
-        Number of edges (e.g., 3 for triangle, 6 for hexagon)
-    side_length : float
-        Length of one side
-
-    Returns
-    -------
-    vertices : list of (x, y)
-        List of N vertex coordinates
-    """
-    r = side_length / (2 * math.sin(math.pi / n_edges))
-    vertices = []
-    for i in range(n_edges):
-        theta = 2 * math.pi * i / n_edges
-        x = r * math.cos(theta)
-        y = r * math.sin(theta)
-        vertices.append((x, y))
-    return vertices
 
 def draw_labeled_polygon(n_sides, side_length, color, position, label):
     """
