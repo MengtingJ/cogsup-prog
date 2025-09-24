@@ -44,7 +44,7 @@ def launching_random_direction():
     # total_distance = radius - min_center_distance
 
     # Move the green square
-    green_steps = 30  # number of step
+    green_steps = 90  # number of step
     step_size = total_distance / green_steps
     green_dx = math.cos(angle) * step_size    # number of pixel for each step
     green_dy = math.sin(angle) * step_size    # number of pixel for each step
