@@ -5,26 +5,32 @@ import random
 control.set_develop_mode()
 
 # Create an object of class Experiment: This stores the global settings of your experiment & handles the data file, screen, and input devices
-exp = design.Experiment(name = "Display-edges")
+exp = design.Experiment(name = "Square")
 
 # Initialize the experiment: Must be done before presenting any stimulus
 control.initialize(exp)
 
-# Create a fixation cross (color, size, and position will take on default values)
-fixation = stimuli.FixCross() 
-square = stimuli.Rectangle(size=(50, 50), colour=(0, 0, 255))
+# set square parameters
+screen_w, screen_h  = exp.screen.size
+
+stim_size = int(screen_w * 0.05)
+w = screen_w // 2 - stim_size // 2
+h = screen_h // 2 - stim_size // 2
+
+edges = []
+for x in (-w, w):
+    for y in (-h, h):
+        edges.append((x, y))
+
+squares = [stimuli.Rectangle(size=(stim_size, stim_size), colour=(255,0,0), line_width=1, position=pos)
+           for pos in edges]
 
 # Start running the experiment
-
 control.start(subject_id=random.randint(1, 999))
 
 # Present the fixation cross and square
-square.present(clear=True, update=False)
-fixation.present(clear=False, update=True)
-exp.clock.wait(500)
-
-# Remove the cross and replace it with a circle
-square.present(clear=True, update=True)
+for i, sq in enumerate(squares):
+    sq.present(clear=(i == 0), update=(i == len(squares) - 1))
 
 # Leave it on-screen until a key is pressed
 exp.keyboard.wait()

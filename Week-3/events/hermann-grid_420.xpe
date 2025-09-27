@@ -1,0 +1,39 @@
+#Expyriment 0.10.0 (Python 3.8.3), .xpe-file, coding: cp936
+#date: Sat Sep 27 2025 17:38:03
+#sha1: 2fbd7d
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Windows', node='LAPTOP-TU1HD8CS', release='10', version='10.0.19041', machine='AMD64', processor='Intel64 Family 6 Model 140 Stepping 1, GenuineIntel')
+Time,Type,Event,Value,Detail,Detail2
+211473,design,log,
+#design: #exp: Hermann Grid
+#design: block_cnt,block_id,trial_cnt,trial_id
+211473,design,logged,
+211473,Experiment,started
+211475,Stimulus,presented,0
+211476,Stimulus,presented,1
+211477,Stimulus,presented,2
+211478,Stimulus,presented,3
+211479,Stimulus,presented,4
+211481,Stimulus,presented,5
+211482,Stimulus,presented,6
+211483,Stimulus,presented,7
+211484,Stimulus,presented,8
+211485,Stimulus,presented,9
+211486,Stimulus,presented,10
+211487,Stimulus,presented,11
+211488,Stimulus,presented,12
+211489,Stimulus,presented,13
+211490,Stimulus,presented,14
+211491,Stimulus,presented,15
+211492,Stimulus,presented,16
+211493,Stimulus,presented,17
+211494,Stimulus,presented,18
+211495,Stimulus,presented,19
+211496,Stimulus,presented,20
+211497,Stimulus,presented,21
+211498,Stimulus,presented,22
+211499,Stimulus,presented,23
+211502,Stimulus,presented,24
+211642,Keyboard,received,13,wait
+211642,Experiment,ended

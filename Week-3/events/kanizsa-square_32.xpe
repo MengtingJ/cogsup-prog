@@ -1,0 +1,19 @@
+#Expyriment 0.10.0 (Python 3.8.3), .xpe-file, coding: cp936
+#date: Sat Sep 27 2025 11:44:10
+#sha1: b4cee3
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Windows', node='LAPTOP-TU1HD8CS', release='10', version='10.0.19041', machine='AMD64', processor='Intel64 Family 6 Model 140 Stepping 1, GenuineIntel')
+Time,Type,Event,Value,Detail,Detail2
+12925,design,log,
+#design: #exp: Square
+#design: block_cnt,block_id,trial_cnt,trial_id
+12925,design,logged,
+12925,Experiment,started
+12927,Stimulus,presented,0
+12928,Stimulus,presented,1
+12929,Stimulus,presented,2
+12931,Stimulus,presented,3
+12934,Stimulus,presented,4
+19384661,Keyboard,received,13,wait
+19384661,Experiment,ended
