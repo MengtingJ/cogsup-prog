@@ -7,9 +7,8 @@ def load(stims):
 
 def timed_draw(stims):
     t0 = exp.clock.time
-    for stim in stims:
-        stim.present(clear=False, update=False) 
-    exp.screen.update()
+    for i, stim in enumerate(stims):
+        stim.present(clear=(i==0), update=(i==len(stims)-1))
     t1 = exp.clock.time
     return t1 - t0
 
@@ -17,7 +16,6 @@ def present_for(stims, t=1000):
     draw_time = timed_draw(stims)
     wait_time = max(0, t - draw_time)
     exp.clock.wait(wait_time)
-
 
 
 """ Test functions """

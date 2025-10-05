@@ -1,0 +1,54 @@
+#Expyriment 0.10.0 (Python 3.8.3), .xpe-file, coding: cp936
+#date: Sun Oct 05 2025 15:43:25
+#sha1: 4e22d8
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Windows', node='LAPTOP-TU1HD8CS', release='10', version='10.0.19041', machine='AMD64', processor='Intel64 Family 6 Model 140 Stepping 1, GenuineIntel')
+Time,Type,Event,Value,Detail,Detail2
+493,design,log,
+#design: #exp: drawing_functions
+#design: block_cnt,block_id,trial_cnt,trial_id
+493,design,logged,
+493,Experiment,started
+652,Stimulus,presented,1
+652,Stimulus,presented,2
+1152,Stimulus,presented,1
+1152,Stimulus,presented,3
+1652,Stimulus,presented,1
+1652,Stimulus,presented,4
+2152,Stimulus,presented,1
+2152,Stimulus,presented,5
+2652,Stimulus,presented,1
+2652,Stimulus,presented,6
+3152,Stimulus,presented,1
+3152,Stimulus,presented,7
+3652,Stimulus,presented,1
+3652,Stimulus,presented,8
+4152,Stimulus,presented,1
+4152,Stimulus,presented,9
+4652,Stimulus,presented,1
+4652,Stimulus,presented,10
+5152,Stimulus,presented,1
+5152,Stimulus,presented,11
+5652,Stimulus,presented,1
+5652,Stimulus,presented,12
+6152,Stimulus,presented,1
+6152,Stimulus,presented,13
+6652,Stimulus,presented,1
+6652,Stimulus,presented,14
+7152,Stimulus,presented,1
+7152,Stimulus,presented,15
+7652,Stimulus,presented,1
+7652,Stimulus,presented,16
+8152,Stimulus,presented,1
+8152,Stimulus,presented,17
+8653,Stimulus,presented,1
+8653,Stimulus,presented,18
+9154,Stimulus,presented,1
+9154,Stimulus,presented,19
+9653,Stimulus,presented,1
+9653,Stimulus,presented,20
+10153,Stimulus,presented,1
+10153,Stimulus,presented,21
+10653,stdout,received,'[500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 501, 500, 500, 500]'
+10653,Experiment,ended
