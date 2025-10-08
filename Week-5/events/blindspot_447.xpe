@@ -1,0 +1,409 @@
+#Expyriment 0.10.0 (Python 3.8.3), .xpe-file, coding: cp936
+#date: Wed Oct 08 2025 17:01:21
+#sha1: d5f891
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Windows', node='LAPTOP-TU1HD8CS', release='10', version='10.0.19041', machine='AMD64', processor='Intel64 Family 6 Model 140 Stepping 1, GenuineIntel')
+Time,Type,Event,Value,Detail,Detail2
+3858,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+3858,design,logged,
+3858,Experiment,started
+3875,Stimulus,presented,1
+3877,Stimulus,presented,2
+4496,Keyboard,received,275,wait
+4498,stdout,received,'Pressed: 275'
+4519,Stimulus,presented,1
+4520,Stimulus,presented,3
+4879,Keyboard,received,275,wait
+4879,stdout,received,'Pressed: 275'
+4891,Stimulus,presented,1
+4893,Stimulus,presented,4
+5845,Keyboard,received,275,wait
+5846,stdout,received,'Pressed: 275'
+5864,Stimulus,presented,1
+5866,Stimulus,presented,5
+5993,Keyboard,received,275,wait
+5994,stdout,received,'Pressed: 275'
+6002,Stimulus,presented,1
+6003,Stimulus,presented,6
+6126,Keyboard,received,275,wait
+6127,stdout,received,'Pressed: 275'
+6148,Stimulus,presented,1
+6149,Stimulus,presented,7
+6255,Keyboard,received,275,wait
+6256,stdout,received,'Pressed: 275'
+6274,Stimulus,presented,1
+6276,Stimulus,presented,8
+6490,Keyboard,received,275,wait
+6491,stdout,received,'Pressed: 275'
+6502,Stimulus,presented,1
+6503,Stimulus,presented,9
+6686,Keyboard,received,275,wait
+6687,stdout,received,'Pressed: 275'
+6705,Stimulus,presented,1
+6707,Stimulus,presented,10
+6838,Keyboard,received,275,wait
+6840,stdout,received,'Pressed: 275'
+6858,Stimulus,presented,1
+6860,Stimulus,presented,11
+6977,Keyboard,received,275,wait
+6978,stdout,received,'Pressed: 275'
+6996,Stimulus,presented,1
+6998,Stimulus,presented,12
+7113,Keyboard,received,275,wait
+7114,stdout,received,'Pressed: 275'
+7135,Stimulus,presented,1
+7137,Stimulus,presented,13
+7265,Keyboard,received,275,wait
+7266,stdout,received,'Pressed: 275'
+7284,Stimulus,presented,1
+7286,Stimulus,presented,14
+7412,Keyboard,received,275,wait
+7412,stdout,received,'Pressed: 275'
+7429,Stimulus,presented,1
+7430,Stimulus,presented,15
+7595,Keyboard,received,275,wait
+7596,stdout,received,'Pressed: 275'
+7603,Stimulus,presented,1
+7606,Stimulus,presented,16
+7928,Keyboard,received,276,wait
+7929,stdout,received,'Pressed: 276'
+7938,Stimulus,presented,1
+7941,Stimulus,presented,17
+8112,Keyboard,received,276,wait
+8114,stdout,received,'Pressed: 276'
+8132,Stimulus,presented,1
+8133,Stimulus,presented,18
+8466,Keyboard,received,275,wait
+8467,stdout,received,'Pressed: 275'
+8485,Stimulus,presented,1
+8489,Stimulus,presented,19
+8596,Keyboard,received,275,wait
+8597,stdout,received,'Pressed: 275'
+8616,Stimulus,presented,1
+8621,Stimulus,presented,20
+8821,Keyboard,received,275,wait
+8822,stdout,received,'Pressed: 275'
+8840,Stimulus,presented,1
+8841,Stimulus,presented,21
+9030,Keyboard,received,275,wait
+9032,stdout,received,'Pressed: 275'
+9049,Stimulus,presented,1
+9053,Stimulus,presented,22
+9154,Keyboard,received,275,wait
+9155,stdout,received,'Pressed: 275'
+9172,Stimulus,presented,1
+9173,Stimulus,presented,23
+9475,Keyboard,received,275,wait
+9476,stdout,received,'Pressed: 275'
+9496,Stimulus,presented,1
+9498,Stimulus,presented,24
+9601,Keyboard,received,275,wait
+9602,stdout,received,'Pressed: 275'
+9620,Stimulus,presented,1
+9622,Stimulus,presented,25
+9800,Keyboard,received,275,wait
+9801,stdout,received,'Pressed: 275'
+9819,Stimulus,presented,1
+9820,Stimulus,presented,26
+9952,Keyboard,received,275,wait
+9953,stdout,received,'Pressed: 275'
+9971,Stimulus,presented,1
+9976,Stimulus,presented,27
+10097,Keyboard,received,275,wait
+10098,stdout,received,'Pressed: 275'
+10114,Stimulus,presented,1
+10118,Stimulus,presented,28
+10186,Keyboard,received,275,wait
+10187,stdout,received,'Pressed: 275'
+10195,Stimulus,presented,1
+10196,Stimulus,presented,29
+10502,Keyboard,received,276,wait
+10503,stdout,received,'Pressed: 276'
+10520,Stimulus,presented,1
+10523,Stimulus,presented,30
+11751,Keyboard,received,276,wait
+11752,stdout,received,'Pressed: 276'
+11772,Stimulus,presented,1
+11774,Stimulus,presented,31
+11914,Keyboard,received,276,wait
+11914,stdout,received,'Pressed: 276'
+11930,Stimulus,presented,1
+11931,Stimulus,presented,32
+12052,Keyboard,received,276,wait
+12053,stdout,received,'Pressed: 276'
+12064,Stimulus,presented,1
+12069,Stimulus,presented,33
+12197,Keyboard,received,276,wait
+12198,stdout,received,'Pressed: 276'
+12216,Stimulus,presented,1
+12219,Stimulus,presented,34
+13285,Keyboard,received,276,wait
+13286,stdout,received,'Pressed: 276'
+13295,Stimulus,presented,1
+13298,Stimulus,presented,35
+13470,Keyboard,received,276,wait
+13471,stdout,received,'Pressed: 276'
+13480,Stimulus,presented,1
+13485,Stimulus,presented,36
+13849,Keyboard,received,276,wait
+13851,stdout,received,'Pressed: 276'
+13859,Stimulus,presented,1
+13862,Stimulus,presented,37
+13993,Keyboard,received,276,wait
+13994,stdout,received,'Pressed: 276'
+14004,Stimulus,presented,1
+14006,Stimulus,presented,38
+14115,Keyboard,received,276,wait
+14116,stdout,received,'Pressed: 276'
+14128,Stimulus,presented,1
+14129,Stimulus,presented,39
+14255,Keyboard,received,276,wait
+14256,stdout,received,'Pressed: 276'
+14266,Stimulus,presented,1
+14269,Stimulus,presented,40
+14396,Keyboard,received,276,wait
+14398,stdout,received,'Pressed: 276'
+14410,Stimulus,presented,1
+14412,Stimulus,presented,41
+14538,Keyboard,received,276,wait
+14540,stdout,received,'Pressed: 276'
+14553,Stimulus,presented,1
+14554,Stimulus,presented,42
+14685,Keyboard,received,276,wait
+14686,stdout,received,'Pressed: 276'
+14697,Stimulus,presented,1
+14700,Stimulus,presented,43
+14844,Keyboard,received,276,wait
+14845,stdout,received,'Pressed: 276'
+14854,Stimulus,presented,1
+14858,Stimulus,presented,44
+14992,Keyboard,received,276,wait
+14993,stdout,received,'Pressed: 276'
+15009,Stimulus,presented,1
+15012,Stimulus,presented,45
+15146,Keyboard,received,276,wait
+15147,stdout,received,'Pressed: 276'
+15159,Stimulus,presented,1
+15160,Stimulus,presented,46
+15294,Keyboard,received,276,wait
+15295,stdout,received,'Pressed: 276'
+15301,Stimulus,presented,1
+15303,Stimulus,presented,47
+15446,Keyboard,received,276,wait
+15447,stdout,received,'Pressed: 276'
+15457,Stimulus,presented,1
+15459,Stimulus,presented,48
+15587,Keyboard,received,276,wait
+15588,stdout,received,'Pressed: 276'
+15599,Stimulus,presented,1
+15600,Stimulus,presented,49
+15752,Keyboard,received,276,wait
+15754,stdout,received,'Pressed: 276'
+15764,Stimulus,presented,1
+15768,Stimulus,presented,50
+16015,Keyboard,received,276,wait
+16016,stdout,received,'Pressed: 276'
+16026,Stimulus,presented,1
+16029,Stimulus,presented,51
+16206,Keyboard,received,276,wait
+16207,stdout,received,'Pressed: 276'
+16216,Stimulus,presented,1
+16218,Stimulus,presented,52
+16361,Keyboard,received,276,wait
+16362,stdout,received,'Pressed: 276'
+16370,Stimulus,presented,1
+16373,Stimulus,presented,53
+16545,Keyboard,received,276,wait
+16547,stdout,received,'Pressed: 276'
+16557,Stimulus,presented,1
+16561,Stimulus,presented,54
+16888,Keyboard,received,276,wait
+16889,stdout,received,'Pressed: 276'
+16899,Stimulus,presented,1
+16904,Stimulus,presented,55
+17051,Keyboard,received,276,wait
+17052,stdout,received,'Pressed: 276'
+17062,Stimulus,presented,1
+17065,Stimulus,presented,56
+17164,Keyboard,received,276,wait
+17165,stdout,received,'Pressed: 276'
+17172,Stimulus,presented,1
+17174,Stimulus,presented,57
+17292,Keyboard,received,276,wait
+17293,stdout,received,'Pressed: 276'
+17311,Stimulus,presented,1
+17315,Stimulus,presented,58
+17424,Keyboard,received,276,wait
+17425,stdout,received,'Pressed: 276'
+17439,Stimulus,presented,1
+17440,Stimulus,presented,59
+57158,Keyboard,received,273,wait
+57159,stdout,received,'Pressed: 273'
+57167,Stimulus,presented,1
+57170,Stimulus,presented,60
+58153,Keyboard,received,273,wait
+58154,stdout,received,'Pressed: 273'
+58163,Stimulus,presented,1
+58165,Stimulus,presented,61
+58267,Keyboard,received,273,wait
+58269,stdout,received,'Pressed: 273'
+58282,Stimulus,presented,1
+58287,Stimulus,presented,62
+58375,Keyboard,received,273,wait
+58377,stdout,received,'Pressed: 273'
+58389,Stimulus,presented,1
+58395,Stimulus,presented,63
+58484,Keyboard,received,273,wait
+58485,stdout,received,'Pressed: 273'
+58497,Stimulus,presented,1
+58502,Stimulus,presented,64
+58611,Keyboard,received,273,wait
+58612,stdout,received,'Pressed: 273'
+58622,Stimulus,presented,1
+58628,Stimulus,presented,65
+58726,Keyboard,received,273,wait
+58727,stdout,received,'Pressed: 273'
+58733,Stimulus,presented,1
+58737,Stimulus,presented,66
+58842,Keyboard,received,273,wait
+58843,stdout,received,'Pressed: 273'
+58856,Stimulus,presented,1
+58861,Stimulus,presented,67
+58953,Keyboard,received,273,wait
+58954,stdout,received,'Pressed: 273'
+58964,Stimulus,presented,1
+58967,Stimulus,presented,68
+59446,Keyboard,received,49,wait
+59447,stdout,received,'Pressed: 49'
+59455,Stimulus,presented,1
+59458,Stimulus,presented,69
+59636,Keyboard,received,49,wait
+59637,stdout,received,'Pressed: 49'
+59646,Stimulus,presented,1
+59648,Stimulus,presented,70
+59791,Keyboard,received,49,wait
+59793,stdout,received,'Pressed: 49'
+59802,Stimulus,presented,1
+59805,Stimulus,presented,71
+60093,Keyboard,received,49,wait
+60094,stdout,received,'Pressed: 49'
+60105,Stimulus,presented,1
+60109,Stimulus,presented,72
+60257,Keyboard,received,49,wait
+60258,stdout,received,'Pressed: 49'
+60267,Stimulus,presented,1
+60270,Stimulus,presented,73
+60431,Keyboard,received,49,wait
+60432,stdout,received,'Pressed: 49'
+60443,Stimulus,presented,1
+60445,Stimulus,presented,74
+60628,Keyboard,received,49,wait
+60629,stdout,received,'Pressed: 49'
+60638,Stimulus,presented,1
+60641,Stimulus,presented,75
+60845,Keyboard,received,49,wait
+60846,stdout,received,'Pressed: 49'
+60856,Stimulus,presented,1
+60860,Stimulus,presented,76
+61002,Keyboard,received,49,wait
+61004,stdout,received,'Pressed: 49'
+61009,Stimulus,presented,1
+61013,Stimulus,presented,77
+61250,Keyboard,received,49,wait
+61251,stdout,received,'Pressed: 49'
+61258,Stimulus,presented,1
+61262,Stimulus,presented,78
+61563,Keyboard,received,49,wait
+61564,stdout,received,'Pressed: 49'
+61574,Stimulus,presented,1
+61575,Stimulus,presented,79
+61717,Keyboard,received,49,wait
+61718,stdout,received,'Pressed: 49'
+61727,Stimulus,presented,1
+61729,Stimulus,presented,80
+62067,Keyboard,received,49,wait
+62068,stdout,received,'Pressed: 49'
+62074,Stimulus,presented,1
+62075,Stimulus,presented,81
+62283,Keyboard,received,49,wait
+62285,stdout,received,'Pressed: 49'
+62289,Stimulus,presented,1
+62293,Stimulus,presented,82
+62902,Keyboard,received,50,wait
+62902,stdout,received,'Pressed: 50'
+62906,Stimulus,presented,1
+62907,Stimulus,presented,83
+63811,Keyboard,received,50,wait
+63813,stdout,received,'Pressed: 50'
+63818,Stimulus,presented,1
+63821,Stimulus,presented,84
+63974,Keyboard,received,50,wait
+63975,stdout,received,'Pressed: 50'
+63981,Stimulus,presented,1
+63984,Stimulus,presented,85
+64112,Keyboard,received,50,wait
+64113,stdout,received,'Pressed: 50'
+64120,Stimulus,presented,1
+64126,Stimulus,presented,86
+64251,Keyboard,received,50,wait
+64252,stdout,received,'Pressed: 50'
+64260,Stimulus,presented,1
+64264,Stimulus,presented,87
+64404,Keyboard,received,50,wait
+64405,stdout,received,'Pressed: 50'
+64411,Stimulus,presented,1
+64413,Stimulus,presented,88
+64566,Keyboard,received,50,wait
+64567,stdout,received,'Pressed: 50'
+64576,Stimulus,presented,1
+64580,Stimulus,presented,89
+64717,Keyboard,received,50,wait
+64719,stdout,received,'Pressed: 50'
+64725,Stimulus,presented,1
+64727,Stimulus,presented,90
+64863,Keyboard,received,50,wait
+64864,stdout,received,'Pressed: 50'
+64874,Stimulus,presented,1
+64875,Stimulus,presented,91
+65019,Keyboard,received,50,wait
+65021,stdout,received,'Pressed: 50'
+65031,Stimulus,presented,1
+65033,Stimulus,presented,92
+65183,Keyboard,received,50,wait
+65184,stdout,received,'Pressed: 50'
+65190,Stimulus,presented,1
+65192,Stimulus,presented,93
+65347,Keyboard,received,50,wait
+65348,stdout,received,'Pressed: 50'
+65356,Stimulus,presented,1
+65360,Stimulus,presented,94
+65505,Keyboard,received,50,wait
+65507,stdout,received,'Pressed: 50'
+65521,Stimulus,presented,1
+65523,Stimulus,presented,95
+65945,Keyboard,received,50,wait
+65947,stdout,received,'Pressed: 50'
+65957,Stimulus,presented,1
+65958,Stimulus,presented,96
+66134,Keyboard,received,50,wait
+66135,stdout,received,'Pressed: 50'
+66148,Stimulus,presented,1
+66150,Stimulus,presented,97
+66302,Keyboard,received,50,wait
+66304,stdout,received,'Pressed: 50'
+66320,Stimulus,presented,1
+66322,Stimulus,presented,98
+66478,Keyboard,received,50,wait
+66479,stdout,received,'Pressed: 50'
+66491,Stimulus,presented,1
+66492,Stimulus,presented,99
+66658,Keyboard,received,50,wait
+66659,stdout,received,'Pressed: 50'
+66675,Stimulus,presented,1
+66677,Stimulus,presented,100
+67197,Keyboard,received,32,wait
+67198,stdout,received,'Pressed: 32'
+67211,Experiment,ended
