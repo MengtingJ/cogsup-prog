@@ -1,0 +1,61 @@
+#Expyriment 0.10.0 (Python 3.8.3), .xpe-file, coding: cp936
+#date: Wed Oct 15 2025 16:50:00
+#sha1: 416a63
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Windows', node='LAPTOP-TU1HD8CS', release='10', version='10.0.19041', machine='AMD64', processor='Intel64 Family 6 Model 140 Stepping 1, GenuineIntel')
+Time,Type,Event,Value,Detail,Detail2
+1654,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1655,design,logged,
+1655,Experiment,started
+1683,Stimulus,presented,20
+4952,Keyboard,received,301,wait
+4953,Stimulus,presented,0
+5454,Stimulus,presented,6
+10854,Keyboard,received,106,wait
+10855,Stimulus,presented,17
+11855,Stimulus,presented,0
+12356,Stimulus,presented,8
+15185,Keyboard,received,102,wait
+15186,Stimulus,presented,17
+16185,Stimulus,presented,0
+16686,Stimulus,presented,8
+17650,Keyboard,received,102,wait
+17652,Stimulus,presented,17
+18650,Stimulus,presented,0
+19151,Stimulus,presented,8
+19674,Keyboard,received,102,wait
+19676,Stimulus,presented,17
+20674,Stimulus,presented,0
+21175,Stimulus,presented,11
+21890,Keyboard,received,106,wait
+21890,Stimulus,presented,17
+22901,Stimulus,presented,21
+27725,Keyboard,received,32,wait
+27725,Stimulus,presented,0
+28226,Stimulus,presented,11
+29111,Keyboard,received,106,wait
+29113,Stimulus,presented,17
+30113,Stimulus,presented,0
+30613,Stimulus,presented,1
+31424,Keyboard,received,106,wait
+31425,Stimulus,presented,17
+32424,Stimulus,presented,0
+32925,Stimulus,presented,16
+34924,Keyboard,received,106,wait
+34925,Stimulus,presented,17
+35924,Stimulus,presented,0
+36425,Stimulus,presented,10
+37570,Keyboard,received,102,wait
+37571,Stimulus,presented,17
+38570,Stimulus,presented,0
+39071,Stimulus,presented,12
+40234,Keyboard,received,102,wait
+40235,Stimulus,presented,17
+41254,Stimulus,presented,22
+42674,Keyboard,received,32,wait
+42675,Experiment,ended
+42702,Data,saved
