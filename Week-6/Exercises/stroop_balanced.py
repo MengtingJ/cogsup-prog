@@ -3,27 +3,27 @@ from expyriment.misc.constants import C_WHITE, C_BLACK, K_j, K_f
 import random
 import itertools
 
+
+
 # Helper for obtaining derangements in python
 def derangements(lst):
     ders = []
     for perm in itertools.permutations(lst):
         if all(original != perm[idx] for idx, original in enumerate(lst)):
-            ders.append(lst)
+            ders.append(perm)
+    return ders
 
-# 示例
-COLORS = ["red", "blue", "green", "orange"]
-perm = derangements(COLORS)
-print(perm)
-# A list of dictionaries for the trials
-trials = (
-[{"trial_type": "match", "word": c, "color": c} for c in COLORS] +
-[{"trial_type": "mismatch", "word": w, "color": c} for w,c in zip(COLORS, PERMS[0])]
-)
+# WORDS = ["red", "blue", "green", "orange"]
+# PERMS = derangements(WORDS)
+# print(PERMS)
+# print(f"Totally {len(PERMS)} derangements。")
+
 
 """ Constants """
 KEYS = [K_j, K_f]
 TRIAL_TYPES = ["match", "mismatch"]
-COLORS = {
+WORDS = ["red", "blue", "green", "orange"]
+COLORS_RGB = {
     "red": (255, 0, 0),
     "blue": (0, 0, 255),
     "green": (0, 255, 0),
@@ -45,7 +45,13 @@ FEEDBACK_CORRECT = """ ^ _ ^ """
 FEEDBACK_INCORRECT = """ (⊙ _ ⊙ ) """
 
 WORDS = ["red", "blue", "green", "orange"]
-COLORS_TAG = ["red", "blue", "green", "orange"]
+PERMS = derangements(WORDS)
+COLORS = ["red", "blue", "green", "orange"]
+
+# Choose one derangement for mismatch mapping
+perm = random.choice(PERMS)
+dict_mismatch = dict(zip(WORDS, perm))
+print("Chosen mismatch mapping:", dict_mismatch)
 
 """ Helper functions """
 def load(stims):
@@ -82,12 +88,17 @@ control.initialize(exp)
 fixation = stimuli.FixCross()
 fixation.preload()
 
-stims = {w: {c: stimuli.TextLine(w, text_colour=COLORS[c]) for c in COLORS} for w in COLORS}
+stims = {w: {c: stimuli.TextLine(w, text_colour=COLORS_RGB[c]) for c in COLORS_RGB} for w in COLORS_RGB}
+
 load([stims[w][c] for w in COLORS for c in COLORS])
 
 feedback_correct = stimuli.TextLine(FEEDBACK_CORRECT, text_size=40)
 feedback_incorrect = stimuli.TextLine(FEEDBACK_INCORRECT, text_size=40)
 load([feedback_correct, feedback_incorrect])
+stims = {w: {c: stimuli.TextLine(w, text_colour=COLORS_RGB[c]) for c in COLORS_RGB} for w in COLORS_RGB}
+for w in WORDS:
+    for c in COLORS_RGB:
+        stims[w][c].preload()
 
 """ Experiment """
 def run_trial(block_id, trial_id, trial_type, word, color):
@@ -107,11 +118,12 @@ present_instructions(INSTR_START)
 for block_id in range(1, N_BLOCKS + 1):
     for trial_id in range(1, N_TRIALS_IN_BLOCK + 1):
         trial_type = random.choice(TRIAL_TYPES)
-        word = random.choice(list(COLORS.keys()))
+        word = random.choice(COLORS)
         if trial_type == "match":
             color = word
         else:
-            color = random.choice([c for c in COLORS.keys() if c != word])
+            color = random.choice([c for c in COLORS if c != word])
+
         run_trial(block_id, trial_id, trial_type, word, color)
 
     if block_id != N_BLOCKS:

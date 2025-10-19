@@ -1,0 +1,45 @@
+#Expyriment 0.10.0 (Python 3.8.3), .xpd-file, coding: cp936
+#date: Sun Oct 19 2025 20:37:04
+#--EXPERIMENT INFO
+#e mainfile: stroop_balanced.py
+#e sha1: 22341d
+#e modules: 
+#e Experiment: Balanced Stroop with BWS Factor
+#e between subject factors (permutation type: latin square)
+#e     assignment = [('blue', 'red', 'orange', 'green'), ('blue', 'green', 'orange', 'red'), ('blue', 'orange', 'red', 'green'), ('green', 'red', 'orange', 'blue'), ('green', 'orange', 'red', 'blue'), ('green', 'orange', 'blue', 'red'), ('orange', 'red', 'blue', 'green'), ('orange', 'green', 'red', 'blue'), ('orange', 'green', 'blue', 'red')]
+#--SUBJECT INFO
+#s id: 919
+#s assignment = ('blue', 'red', 'orange', 'green')
+subject_id,block_cnt,trial_cnt,trial_type,word,color,RT,correct
+919,1,1,mismatch,red,orange,1596,False
+919,1,2,mismatch,green,orange,5034,False
+919,1,3,match,blue,blue,473,True
+919,1,4,mismatch,orange,green,297,True
+919,1,5,mismatch,orange,green,268,True
+919,1,6,mismatch,blue,green,401,True
+919,1,7,mismatch,green,red,205,False
+919,1,8,mismatch,blue,green,761,False
+919,1,9,mismatch,blue,orange,934,False
+919,1,10,mismatch,blue,red,305,True
+919,1,11,match,blue,blue,1113,False
+919,1,12,match,red,red,446,False
+919,1,13,match,blue,blue,297,True
+919,1,14,mismatch,green,orange,331,True
+919,1,15,mismatch,red,green,319,True
+919,1,16,mismatch,red,orange,467,True
+919,2,1,match,orange,orange,356,False
+919,2,2,mismatch,blue,orange,299,False
+919,2,3,match,orange,orange,466,True
+919,2,4,mismatch,blue,green,377,True
+919,2,5,match,blue,blue,500,True
+919,2,6,match,red,red,404,False
+919,2,7,match,red,red,366,True
+919,2,8,match,orange,orange,341,False
+919,2,9,match,green,green,270,True
+919,2,10,mismatch,blue,red,415,True
+919,2,11,mismatch,red,green,374,True
+919,2,12,mismatch,orange,green,308,True
+919,2,13,match,blue,blue,420,True
+919,2,14,mismatch,blue,orange,315,True
+919,2,15,match,red,red,394,True
+919,2,16,match,orange,orange,364,False
