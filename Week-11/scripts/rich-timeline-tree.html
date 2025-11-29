@@ -11,32 +11,36 @@
   <script type="text/javascript">
     const NUMBER_OF_TRIALS_PER_KEY = 10;
     const KEYS = ['F', 'J'];
-    const BLANK_DURATION = 50 // ms;
+    const STIMULUS_DURATION = 1000; //ms
+    BLANK_DURATION = 50; //ms
 
-    function createKeyPressTrial(targetKey, keys, blankDuration){
-      let blankTrial = {
-        type: jsPsychHtmlKeyboardResponse,
-        stimulus: "",
-        trial_duration: blankDuration,
-        choices: [],
-      };
+    function createKeyPressTrial(targetKey, lowerCase, keys, stimulusDuration, blankDuration){
 
       let stimulusDisplayTrial = {
         type: jsPsychHtmlKeyboardResponse,
-        stimulus: targetKey,
+        stimulus: lowerCase ? targetKey.toLocaleLowerCase() : targetKey.toUpperCase(),
+        trial_duration: stimulusDuration,
+        post_trial_gap: blankDuration,
         choices: keys,
+        data: {
+          expected_key: targetKey,
+          displayed_key: lowerCase ? targetKey.toLowerCase() : targetKey.toUpperCase()
+        }
       }
 
       return {
-        timeline:  [blankTrial, stimulusDisplayTrial]
+        timeline:  [stimulusDisplayTrial]
       }
     }
 
-    function createShuffledListOfTrials(keys, trialsPerKey, blankDuration){
+    function createShuffledListOfTrials(keys, trialsPerKey, stimulusDuration, blankDuration){
       let possibleTrials = [];
 
       for (let k = 0; k < keys.length; k += 1){
-        possibleTrials.push(createKeyPressTrial(keys[k], keys, blankDuration));
+        // We counter balance upper and lower case
+        for (let lowerCase of [true, false]){
+          possibleTrials.push(createKeyPressTrial(keys[k], lowerCase, keys, stimulusDuration, blankDuration));
+        }
       }
 
       return jsPsych.randomization.repeat(possibleTrials, trialsPerKey);
@@ -63,7 +67,7 @@
         `
     };
 
-    let trials = createShuffledListOfTrials(KEYS, NUMBER_OF_TRIALS_PER_KEY, BLANK_DURATION);
+    let trials = createShuffledListOfTrials(KEYS, NUMBER_OF_TRIALS_PER_KEY, STIMULUS_DURATION, BLANK_DURATION);
 
     let timeline = [helloTrial];
 

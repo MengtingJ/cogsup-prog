@@ -4,7 +4,6 @@
     <title>My experiment</title>
     <script src="https://unpkg.com/jspsych@8.0.2"></script>
     <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-html-slider-response@2.0.0"></script>
     <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
   </head>
   <body></body>
@@ -29,21 +28,8 @@
         }
       }
 
-      let confidenceTrial = {
-        type: jsPsychHtmlSliderResponse,
-        stimulus: "<p>How confident are you about your response?</p>",
-        labels: ["Very unconfident", "Very confident"],
-        slider_width: 400,
-        require_movement: true,
-        data: {
-          trial_part: "confidence",
-          targetKey: targetKey,
-          lowerCase: lowerCase
-        }
-      };
-
       return {
-        timeline:  [stimulusDisplayTrial, confidenceTrial]
+        timeline:  [stimulusDisplayTrial]
       }
     }
 
